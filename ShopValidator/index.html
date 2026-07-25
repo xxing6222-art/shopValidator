@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="勇哥判店：先确认位置，用持续语音完成经营问诊，再从候选方案中选出可验证行动。">
+  <title>勇哥判店 · 先判断，再投钱</title>
+  <link rel="icon" type="image/jpeg" href="/icon.jpeg">
+  <link rel="stylesheet" href="/styles.css?v=receipt-sync-3">
+</head>
+<body data-product-view="landing">
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="勇哥判店首页">
+      <img class="brand-logo" src="/icon.jpeg" alt="">
+      <span>勇哥判店</span>
+    </a>
+    <span class="topbar-stat">已归档 <b id="headerTitles">623</b> 例 · 高可信 <b id="headerTranscripts">156</b> 例</span>
+    <a class="topbar-ranking" href="/ranking">公开案例账单</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" data-landing>
+      <div>
+        <span class="eyebrow">勇哥判店 · 餐饮经营决策检查</span>
+        <h1 class="hero-title-note"><span>花<em>十万</em>之前<br>先花<em>十分钟</em></span></h1>
+        <p>通过一次持续语音问诊，勇哥判店帮助你确认经营事实、算清保本条件，并判断下一步应该继续、验证、调整还是退出。</p>
+        <p class="hero-shortline">说十分钟，先判断这家店该开、该改，还是该停。</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#judge" data-testid="hero-start">开始店铺问诊</a>
+          <a class="demo-button" href="/demo/" data-testid="hero-demo">直接使用山西运城小碗菜的数据试试看</a>
+          <a class="ranking-button" href="/ranking" data-testid="hero-ranking"><span>已核验的匿名经营案例</span><b>查看公开案例账单 →</b></a>
+        </div>
+      </div>
+      <aside class="market-signal" aria-label="餐饮行业风险信号">
+        <article class="market-card market-scale">
+          <span>2025 年中国餐饮收入</span><strong>5.8 万亿元</strong><p>市场仍在增长</p>
+        </article>
+        <article class="market-card market-closure">
+          <span>2025 年被标记停业的餐饮商户</span><strong>339 万家</strong><p>门店仍在高速出清</p>
+        </article>
+        <article class="market-card market-early">
+          <span>停业商户中开业不足两年的比例</span><strong>65.1%</strong><p>许多错误发生在最初两年</p>
+        </article>
+      </aside>
+    </section>
+
+    <section class="landing-conclusion" data-landing>
+      <p>餐饮市场仍在增长，约 3/4 的门店没有撑过第二年。</p>
+      <strong>行业有需求，不代表每一家店都有成立条件。</strong>
+    </section>
+
+    <section class="landing-section fact-error-section" data-landing>
+      <div class="landing-section-heading">
+        <span class="section-kicker">为什么不是普通表格</span>
+        <h2>开店失败之前，往往先发生了一次事实错误。</h2>
+        <p>勇哥判店不是替老板许愿，而是先把口语里含混、遗漏、单位错位的信息变成可核对的经营事实。</p>
+      </div>
+      <div class="fact-contrast">
+        <article class="actual-speech">
+          <span>老板实际说的话</span>
+          <blockquote>“一个月能卖十到十二万。”</blockquote>
+          <blockquote>“房租十二万。”</blockquote>
+          <blockquote>“毛利大概四十五。”</blockquote>
+          <blockquote>“老婆平时帮忙，不算员工。”</blockquote>
+          <blockquote>“附近人挺多。”</blockquote>
+        </article>
+        <article class="fact-checks">
+          <span>勇哥判店必须确认的问题</span>
+          <dl>
+            <div><dt>十到十二万</dt><dd>这是范围，不是 11 万元的精确值</dd></div>
+            <div><dt>房租十二万</dt><dd>每年还是每月？</dd></div>
+            <div><dt>毛利 45%</dt><dd>是否意味着成本率 55%？</dd></div>
+            <div><dt>家人帮忙</dt><dd>劳动成本不能自动记为 0</dd></div>
+            <div><dt>附近人多</dt><dd>是否真的是目标顾客？</dd></div>
+          </dl>
+        </article>
+      </div>
+      <p class="section-conclusion">事实没有确认，后面的每一个精确结论，都可能只是精确的错误。</p>
+    </section>
+
+    <section class="landing-section method-section" data-landing>
+      <div class="landing-section-heading">
+        <span class="section-kicker">勇哥判店怎么做</span>
+        <h2>说清楚 → 认清楚 → 算清楚 → 试清楚</h2>
+      </div>
+      <div class="method-lanes">
+        <article><b>01</b><h3>说出来</h3><p>不用填写复杂经营表格，持续语音回答问题。</p></article>
+        <article><b>02</b><h3>确认事实</h3><p>金额、周期、比例、未知项全部通过选择题纠正。</p></article>
+        <article><b>03</b><h3>程序算账</h3><p>保本营业额、真实成本、现金寿命由确定性程序计算。</p></article>
+        <article><b>04</b><h3>做一个实验</h3><p>最多留下三个有预算、期限、指标、成功线和停止线的行动。</p></article>
+      </div>
+    </section>
+
+    <section class="landing-section yongge-section" data-landing>
+      <div class="landing-section-heading">
+        <span class="section-kicker">需求已经被验证</span>
+        <h2>数百万人正在观看别人把经营账目重新算一遍。</h2>
+      </div>
+      <div class="yongge-grid">
+        <div class="yongge-copy">
+          <p>一个餐饮主播，仅靠追问营业额、房租、人工和亏损，就吸引了大量关注。这说明普通经营者真正需要的，不是更多创业鼓励，而是有人敢把事实问清楚、把账算清楚，并在必要时告诉他停止投入。</p>
+          <p class="yongge-keyline"><strong>但真人一次只能判断一家店，而且很多人找到他时，钱已经花出去了。</strong>勇哥判店把这次经营检查，提前到签约、装修、借钱和继续追加投入之前。</p>
+        </div>
+        <div class="yongge-proof" aria-label="勇哥餐饮创业说公开数据">
+          <article><strong>约 444 万</strong><span>公开账号粉丝</span></article>
+          <article><strong>约 30 场</strong><span>第三方近 30 天直播记录</span></article>
+          <article><strong>239 场</strong><span>近半年直播统计</span></article>
+          <article><strong>58 万</strong><span>单日直播观看人次最高值</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="judge" id="judge">
+      <div class="judge-heading">
+        <div>
+          <h2 id="flowTitle">先确认店铺位置</h2>
+        </div>
+        <ol class="progress" aria-label="问诊进度">
+          <li class="active" data-progress="location"><b>1</b><span>位置</span></li>
+          <li data-progress="interview"><b>2</b><span>问诊</span></li>
+          <li data-progress="review"><b>3</b><span>纠偏</span></li>
+          <li data-progress="result"><b>4</b><span>方案</span></li>
+        </ol>
+      </div>
+
+      <div class="flow-shell">
+        <section class="flow-card flow-panel active" id="locationPanel" data-panel="location" data-testid="location-step">
+          <div class="step-title">
+            <span>第一步</span>
+            <h3>这次要判断哪家店？</h3>
+          </div>
+
+          <fieldset class="stage-picker">
+            <legend>你现在处于哪个阶段？</legend>
+            <div class="choice-grid" data-testid="stage-options">
+              <button type="button" data-stage="preopen">准备开店 / 接店</button>
+              <button type="button" data-stage="operating">已经营业</button>
+              <button type="button" data-stage="growth">有利润，想增长</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="category-picker">
+            <legend>这家店卖什么？</legend>
+            <div class="category-chips" aria-label="常见经营品类" data-testid="category-chips">
+              <button type="button" data-category="我不知道">我不知道</button>
+              <button type="button" data-category="快餐">快餐</button>
+              <button type="button" data-category="小碗菜">小碗菜</button>
+              <button type="button" data-category="面馆">面馆</button>
+              <button type="button" data-category="咖啡">咖啡</button>
+              <button type="button" data-category="火锅">火锅</button>
+              <button type="button" data-category="烧烤">烧烤</button>
+            </div>
+          </fieldset>
+          <label class="field category-input-field">
+            <input id="category" type="text" maxlength="30" placeholder="在这里直接输入品类" data-testid="category-input">
+          </label>
+
+          <button class="location-button" id="locateButton" type="button" data-testid="use-location">
+            <span class="location-icon">◎</span>
+            <span><b>使用我现在的位置</b><small>只用于本次判断，不保存原始坐标</small></span>
+          </button>
+
+          <div class="manual-location-inline">
+            <input id="manualLocation" type="text" autocomplete="street-address" enterkeyhint="search" placeholder="或输入城市、商圈、路名或门牌号" data-testid="manual-address">
+            <button id="useManualLocation" class="secondary-button" type="button" data-testid="lookup-address">查找这个位置</button>
+          </div>
+
+          <div class="location-status" id="locationStatus" role="status" aria-live="polite" data-testid="location-status" hidden>
+            <span class="status-dot"></span><p></p>
+          </div>
+
+          <section class="map-picker" id="mapPicker" hidden data-testid="map-picker" aria-label="地图选点">
+            <div class="map-picker-heading">
+              <div><small>确认到店铺门口</small><b>点击地图，微调图钉位置</b></div>
+              <button id="mapPickerRelocate" type="button" class="map-picker-relocate">回到我的位置</button>
+            </div>
+            <div class="map-picker-canvas" id="mapPickerCanvas" role="button" tabindex="0" aria-label="点击地图选择店铺位置" data-testid="map-picker-canvas">
+              <img id="mapPickerImage" alt="店铺周边地图">
+              <span class="map-picker-pin" id="mapPickerPin" aria-hidden="true">●</span>
+              <span class="map-picker-center" aria-hidden="true"></span>
+            </div>
+            <div class="map-picker-actions">
+              <span id="mapPickerCoordinate">已定位到地图中心</span>
+              <button id="useMapPickerPoint" class="secondary-button" type="button" disabled data-testid="use-map-point">使用图钉位置</button>
+            </div>
+          </section>
+
+          <div class="map-summary" id="mapSummary" hidden data-testid="map-summary">
+            <div>
+              <small>地图找到的位置</small>
+              <strong id="mapAddress">—</strong>
+              <span id="mapDistrict">—</span>
+            </div>
+            <div>
+              <small>800 米同类地点</small>
+              <strong id="mapCompetitors">—</strong>
+              <span>只作周边背景，不代表客流</span>
+            </div>
+            <div class="nearby-tags" id="nearbyTags"></div>
+            <button id="confirmLocation" class="confirm-location" type="button" data-testid="confirm-location">这是正确位置</button>
+          </div>
+
+          <div class="location-proof" id="locationProof" hidden>
+            <span>✓</span><p><b>位置已确认</b><small id="locationProofText">—</small></p>
+            <button class="location-edit" id="editLocation" type="button">修改</button>
+          </div>
+
+          <button class="primary-button full-width" id="beginInterview" type="button" disabled data-testid="begin-interview">
+            开始问诊并持续录音
+          </button>
+
+          <a class="panel-demo-link" id="panelDemoLink" href="/demo" data-testid="bottom-demo" hidden>直接使用山西运城小碗菜的记录分析 <span>→</span></a>
+        </section>
+
+        <section class="flow-card flow-panel interview-panel" id="interviewPanel" data-panel="interview" hidden data-testid="interview-step">
+          <div class="interview-topline">
+            <span class="listening-pill" id="listeningPill"><i></i><b id="listeningLabel">正在准备</b></span>
+            <span id="questionProgress" data-testid="question-progress">1/12</span>
+          </div>
+
+          <div class="question-stage" aria-live="polite">
+            <h3 id="currentQuestion" data-testid="current-question">正在准备第一个问题…</h3>
+            <p id="questionHint"></p>
+          </div>
+
+          <div class="transcript-shell">
+            <p id="liveTranscript" aria-live="polite" data-testid="live-transcript">语音识别会即时写入下方输入框</p>
+            <small id="transcriptMode">正在准备语音识别…</small>
+          </div>
+
+          <form class="text-fallback" id="textFallback" data-testid="text-fallback">
+            <label for="fallbackAnswer">回答</label>
+            <textarea id="fallbackAnswer" rows="3" placeholder="可直接输入，或等待语音识别写入"></textarea>
+            <button type="submit" class="primary-button" id="confirmAnswer">确认并下一题</button>
+          </form>
+
+          <div class="interview-controls">
+            <button class="secondary-button" id="previousQuestion" type="button" data-testid="previous-question" disabled>上一题</button>
+          </div>
+          <p class="interview-note" id="interviewNotice" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="flow-card flow-panel review-panel" id="reviewPanel" data-panel="review" hidden data-testid="review-step">
+          <div class="review-receipt-meta" aria-hidden="true">
+            <span>事实核对单</span>
+            <span>STEP 03 / REVIEW</span>
+          </div>
+          <div class="step-title">
+            <span>第三步</span>
+            <h3>一次看完所有记录</h3>
+            <p>每一项只需确认正确、标记不知道，或者直接修改你刚才说的话。</p>
+          </div>
+
+          <form id="reviewForm" class="review-form" data-testid="review-form">
+            <div class="review-facts-list" id="reviewFactsList" data-testid="review-facts-list"></div>
+            <div class="review-submit-bar">
+              <p id="reviewFormStatus" role="status" aria-live="polite">所有问题都列在这里，不会再用语音重问。</p>
+              <button class="primary-button" id="submitReview" type="submit" data-testid="submit-review">确定提交</button>
+            </div>
+          </form>
+
+          <section class="review-summary" id="reviewSummary" hidden data-testid="review-summary">
+            <span class="section-kicker">店铺档案已整理</span>
+            <h3>现在可以开始算账和找方案</h3>
+            <div id="reviewSummaryList"></div>
+            <p>修改任何关键事实后，旧计算和旧方案都会失效。</p>
+            <button class="primary-button full-width" id="startAnalysis" type="button" data-testid="start-analysis">开始分析 3 个候选方案</button>
+          </section>
+        </section>
+
+        <section class="flow-card flow-panel analysis-panel" id="analysisPanel" data-panel="result" hidden data-testid="analysis-step">
+          <div id="analysisProgress" data-testid="analysis-progress">
+            <div class="analysis-media" aria-hidden="true">
+              <video class="analysis-loading" src="/loading.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <b id="analysisPercent">0%</b>
+            <span class="section-kicker">正在后台分析</span>
+            <h3 id="analysisTitle">先按勇哥框架算账</h3>
+            <p id="analysisStatus">正在检查单位经济、现金寿命和第一断点…</p>
+            <div class="analysis-track"><i id="analysisProgressBar"></i></div>
+            <ol class="analysis-steps" id="analysisSteps">
+              <li class="active">确定性算账</li>
+              <li>生成主方案</li>
+              <li>证据与因果核验</li>
+              <li>财务与执行核验</li>
+              <li>生成已核验备选</li>
+            </ol>
+          </div>
+
+          <section class="analysis-failure" id="analysisFailure" hidden role="alert" aria-live="assertive" data-testid="analysis-failure">
+            <span class="section-kicker">本次未生成报告</span>
+            <h3 id="analysisFailureTitle">暂时无法生成报告</h3>
+            <p id="analysisFailureMessage">请返回检查位置或稍后再试。</p>
+            <button class="secondary-button" id="analysisFailureBack" type="button">返回修改位置</button>
+          </section>
+
+          <section class="result-shell" id="result" hidden aria-live="polite" data-testid="result">
+            <section class="preopen-recommendation" id="preopenRecommendation" hidden data-testid="preopen-recommendation"></section>
+            <div class="result-main">
+              <div><span id="decisionCode">小步验证</span></div>
+              <h2 id="decisionTitle">—</h2>
+              <p id="decisionReason">—</p>
+            </div>
+            <div class="result-metrics" id="resultMetrics"></div>
+            <div class="narrative" id="narrative"></div>
+            <details class="result-fact-evidence taped-evidence-note" id="resultFactEvidence" data-testid="result-fact-evidence">
+              <summary>查看事实与核验依据</summary>
+              <div>
+                <span class="section-kicker">本次判断基于什么</span>
+                <h3>先看已确认事实，再看结论。</h3>
+                <p id="resultFactSummary">正在整理本次案卷的事实边界…</p>
+              </div>
+              <div class="result-fact-list" id="resultFactList"></div>
+            </details>
+            <div class="plans-heading">
+              <div><h3>下一步方案</h3></div>
+              <span id="candidateCount"></span>
+            </div>
+            <div class="plan-list" id="planList" data-testid="top-plans"></div>
+            <details class="rejected">
+              <summary>为什么其他方案被淘汰</summary>
+              <div id="rejectedReasons"></div>
+            </details>
+            <div class="result-actions">
+              <button class="primary-button" id="restartButton" type="button">重新判断</button>
+            </div>
+          </section>
+
+          <section class="result-leaderboard" id="resultLeaderboard" hidden aria-label="其他店铺判断案例">
+            <div class="result-leaderboard-intro">
+              <span class="section-kicker">看完你自己的店，再看别人的</span>
+              <h2>别人的店，是怎么被判断的</h2>
+              <p>下面是已核验的匿名案例。点开任意一张，就是这家店完整的分析结果页——含判断依据、下一步方案与被淘汰的理由。</p>
+            </div>
+            <div class="ranking-list" id="resultRankingList" aria-live="polite"><p>正在载入案例…</p></div>
+            <a class="result-leaderboard-more" href="/ranking">查看完整排行榜 →</a>
+          </section>
+        </section>
+      </div>
+    </section>
+
+    <section class="source-note" data-landing>
+      <p>数据来源：国家统计局、《2026 中国餐饮连锁化发展白皮书》、飞瓜数据等公开第三方页面。</p>
+      <p>“停业商户”不等同于司法或统计意义上的破产企业；65.1% 指 2025 年停业商户中，于 2024 年或 2025 年开业的商户占比。勇哥相关数据为第三方平台公开统计，时间口径可能变动。</p>
+    </section>
+  </main>
+
+  <footer data-landing>
+    <div class="barcode-wrap" aria-hidden="true"><div class="barcode"></div><span>YONGGE-PANDIAN · v2026.07</span></div>
+    <div><img class="brand-logo small" src="/icon.jpeg" alt=""><b>勇哥判店</b></div>
+    <p>经营决策筛查工具，不替代会计、法律或投资意见。</p>
+    <span><b id="heroTitles">623</b> 个真实餐饮案例校准 <i hidden id="heroTranscripts">156</i></span>
+  </footer>
+
+  <dialog class="plan-detail-dialog" id="planDetailDialog" aria-labelledby="planDetailTitle">
+    <div class="plan-detail-header">
+      <div><span class="section-kicker">已核验方案</span><h2 id="planDetailTitle">详细方案</h2></div>
+      <button class="dialog-close" id="closePlanDetail" type="button" aria-label="关闭详细方案">×</button>
+    </div>
+    <p class="plan-detail-note">以下内容由 AI 基于已核验的方案展开；不改变预算、期限、成功线和停止线。</p>
+    <div class="plan-markdown" id="planDetailMarkdown"></div>
+  </dialog>
+
+  <dialog class="case-detail-dialog" id="caseDetailDialog" aria-labelledby="caseDetailKicker">
+    <div class="case-detail-bar"><span class="section-kicker" id="caseDetailKicker">案例分析结果</span><button class="dialog-close" id="closeCaseDetail" type="button" aria-label="关闭案例详情">×</button></div>
+    <div class="case-detail-body" id="caseDetailBody"></div>
+  </dialog>
+  <dialog class="share-receipt-dialog" id="shareReceiptDialog" aria-labelledby="shareReceiptTitle">
+    <div class="case-detail-bar share-receipt-bar">
+      <span class="section-kicker" id="shareReceiptTitle">匿名经营判断票</span>
+      <button class="dialog-close" id="closeShareReceipt" type="button" aria-label="关闭分享票">×</button>
+    </div>
+    <div class="share-receipt-body" id="shareReceiptBody"></div>
+    <div class="share-receipt-controls">
+      <button class="secondary-button" id="copyShareLink" type="button">复制链接</button>
+      <button class="primary-button" id="printShareReceipt" type="button">打印这张票</button>
+    </div>
+  </dialog>
+
+  <script src="/fact-store.js"></script>
+  <script src="/decision-engine.js"></script>
+  <script src="/app.js?v=share-routes-1"></script>
+</body>
+</html>

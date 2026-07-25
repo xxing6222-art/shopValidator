@@ -1,0 +1,72 @@
+name = "yongge"
+compatibility_date = "2026-07-23"
+workers_dev = false
+main = "worker.mjs"
+
+# A Custom Domain makes Cloudflare create and manage the DNS record and TLS
+# certificate. It avoids exposing a Pages project as the production origin.
+[[routes]]
+pattern = "shopvalidator.zhangyvjing.com"
+custom_domain = true
+
+[[routes]]
+pattern = "demo.shopvalidator.zhangyvjing.com"
+custom_domain = true
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+run_worker_first = ["/api/*"]
+
+[triggers]
+crons = ["17 3 * * *"]
+
+[[queues.producers]]
+binding = "ANALYSIS_QUEUE"
+queue = "yongge-analysis"
+
+[[queues.consumers]]
+queue = "yongge-analysis"
+max_batch_size = 1
+max_batch_timeout = 1
+max_retries = 3
+max_concurrency = 1
+dead_letter_queue = "yongge-analysis-dlq"
+
+[[durable_objects.bindings]]
+name = "AGENT_GATE"
+class_name = "AgentGate"
+
+[[migrations]]
+tag = "v1-agent-gate"
+new_sqlite_classes = ["AgentGate"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "yongge-cases"
+database_id = "2d24b2fd-4119-4932-9458-c2607a09c7c4"
+
+[vars]
+APP_ORIGIN = "https://shopvalidator.zhangyvjing.com"
+DEMO_ORIGIN = "https://demo.shopvalidator.zhangyvjing.com"
+STEPFUN_BASE_URL = "https://api.stepfun.com/step_plan/v1"
+STEPFUN_MODEL = "step-3.7-flash"
+DASHSCOPE_ASR_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation"
+DASHSCOPE_ASR_MODEL = "fun-asr-flash-2026-06-15"
+DASHSCOPE_TTS_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation"
+DASHSCOPE_TTS_MODEL = "qwen3-tts-instruct-flash"
+DASHSCOPE_TTS_VOICE = "Serena"
+DASHSCOPE_TTS_INSTRUCTIONS = "温柔、自然、有专业感的年轻女声；普通话清晰；中等偏慢语速；像一位可信赖的产品助手。"
+
+# Secrets are configured with:
+#   npx wrangler secret put STEPFUN_API_KEY
+# or, for a server-only comma/newline-separated key pool:
+#   npx wrangler secret put STEPFUN_API_KEYS
+#   npx wrangler secret put TENCENT_MAP_KEY
+#   npx wrangler secret put TENCENT_MAP_KEY_SECONDARY
+#   npx wrangler secret put DASHSCOPE_API_KEY
+#
+# Production analysis uses ANALYSIS_QUEUE. Each run creates exactly 3 candidate
+# pipelines; every candidate receives one evidence/causality review and one
+# finance/execution review, with global concurrency capped at 3.
